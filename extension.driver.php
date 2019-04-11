@@ -28,8 +28,8 @@
             Symphony::Configuration()->set('track_content', 'no', 'db_sync');
             Symphony::Configuration()->set('log_file', 'db_sync.sql', 'db_sync');
             Symphony::Configuration()->set('log_dir', '/workspace/struct/', 'db_sync');
-            Symphony::Configuration()->set('mysql_bin', '/usr/local/bin/mysql', 'db_sync');
-            Symphony::Configuration()->set('mysqldump_bin', '/usr/local/bin/mysqldump', 'db_sync');
+            Symphony::Configuration()->set('mysql_bin', '/usr/local/mysql/bin', 'db_sync');
+            Symphony::Configuration()->set('mysqldump_bin', '/usr/local/mysql/bin/mysqldump', 'db_sync');
             Symphony::Configuration()->set('gzip_bin', '/usr/bin/gzip', 'db_sync');
             Symphony::Configuration()->set('gunzip_bin', '/usr/bin/gunzip', 'db_sync');
 			Symphony::Configuration()->write();
@@ -42,9 +42,9 @@
                 Symphony::Configuration()->set('track_authors', 'no', 'db_sync');
                 Symphony::Configuration()->set('track_content', 'no', 'db_sync');
                 Symphony::Configuration()->set('log_file', 'db_sync.sql', 'db_sync');
-                Symphony::Configuration()->set('log_dir', '/manifest/', 'db_sync');
-                Symphony::Configuration()->set('mysql_bin', '/usr/local/bin/mysql', 'db_sync');
-                Symphony::Configuration()->set('mysqldump_bin', '/usr/local/bin/mysqldump', 'db_sync');
+                Symphony::Configuration()->set('log_dir', '/manifest/struct/', 'db_sync');
+                Symphony::Configuration()->set('mysql_bin', '/usr/local/mysql/bin', 'db_sync');
+                Symphony::Configuration()->set('mysqldump_bin', '/usr/local/mysql/bin/mysqldump', 'db_sync');
                 Symphony::Configuration()->set('gzip_bin', '/usr/bin/gzip', 'db_sync');
                 Symphony::Configuration()->set('gunzip_bin', '/usr/bin/gunzip', 'db_sync');
                 Symphony::Configuration()->write();
